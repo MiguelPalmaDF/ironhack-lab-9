@@ -64,10 +64,6 @@ Repositorio de Laboratorio 9 de IronHack
 
 #### Architecture Documentation:
 
-**Proposed Microservices Architecture:**
-
-![Microservices Architecture Diagram](https://via.placeholder.com/800x400?text=Microservices+Architecture+Diagram)
-
 La decisión de utilizar bases de datos NoSQL para servicios que requieren alta disponibilidad y consultas rápidas (como User Service y Product Catalog Service) se basa en la necesidad de rendimiento y escalabilidad. Para el Order Service, se eligió una base de datos relacional debido a la necesidad de consistencia transaccional.
 
 El uso de un API Gateway facilita la gestión de solicitudes de clientes y la redirección a los microservicios apropiados, mientras que un Message Broker permite una comunicación asíncrona eficiente entre los servicios, mejorando la capacidad de respuesta y la resistencia del sistema.
